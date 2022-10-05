@@ -18,7 +18,7 @@ const Router = () => {
 
             { path: '/all_foods/:foodcat',
             loader: async({params})=>{
-                return fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${params.foodcat}`)
+                return fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${params.foodcat}`)
             },
             element: <AllFoods></AllFoods> },
             { path: '/blog' , element : <Blog></Blog> },
