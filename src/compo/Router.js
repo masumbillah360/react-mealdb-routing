@@ -6,6 +6,7 @@ import Friend from './Friend';
 import Home from './Home';
 import Layout from './Layout';
 import PageNot from './PageNot';
+import SearchFood from './SearchFood';
 
 const Router = () => {
     const router = createBrowserRouter([
@@ -21,6 +22,7 @@ const Router = () => {
                 return fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${params.foodcat}`)
             },
             element: <AllFoods></AllFoods> },
+            { path:'/home/:searchText', element: <SearchFood></SearchFood> },
             { path: '/blog' , element : <Blog></Blog> },
             { path: '/friends', element : <Friend></Friend> }
         ]},
