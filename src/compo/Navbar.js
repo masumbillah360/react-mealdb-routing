@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <div className='flex justify-center flex-col items-center h-40 bg-gray-600'>
             <nav className='text-white'>
-                <NavLink className='mr-3 px-3 bg-gray-800 rounded-lg' to='/home' >Home</NavLink>
+                <NavLink className='mr-3 px-3 bg-gray-800 rounded-lg' to='/home' >Food</NavLink>
                 <NavLink className='mr-3 px-3 bg-gray-800 rounded-lg' to='/blog' >Blog</NavLink>
                 <NavLink className='mr-3 px-3 bg-gray-800 rounded-lg' to='/friends' >Friends</NavLink>
             </nav>

@@ -2,6 +2,7 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AllFoods from './AllFoods';
 import Blog from './Blog';
+import Details from './Details';
 import Friend from './Friend';
 import Home from './Home';
 import Layout from './Layout';
@@ -27,6 +28,7 @@ const Router = () => {
                 return fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${params.searchText}`)
             },
             element: <SearchFood></SearchFood> },
+
             { path: '/blog' , element : <Blog></Blog> },
             { path: '/friends', element : <Friend></Friend> }
         ]},

@@ -11,7 +11,7 @@ const SearchedMeal = ({meal}) => {
                 <p>Area : {strArea}</p>
                 <p>Ingredient : {strIngredient1?strIngredient1:"not found"}</p>
             </div>
-            <p className='text-left'>Description : {strInstructions? strInstructions.slice(0,200)+'...': strInstructions}</p>
+            <p className='text-left mb-3'>Description : {strInstructions? strInstructions.slice(0,200)+'...': strInstructions}</p>
             <button className='bg-amber-800 rounded text-white font-bold px-2 py-1'>Buy Now</button>
             <button className='bg-amber-800 rounded text-white font-bold px-2 py-1 ml-2'>Add To Cart</button>
         </div>
