@@ -1,12 +1,8 @@
 import React from "react";
 
 const SingleFood = ({ meal }) => {
-    console.log(meal);
 	const {
 		strMeal,
-		strCategory,
-		strArea,
-		strInstructions,
 		strMealThumb,
 	} = meal;
 	return (
