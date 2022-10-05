@@ -2,7 +2,6 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AllFoods from './AllFoods';
 import Blog from './Blog';
-import Details from './Details';
 import Friend from './Friend';
 import Home from './Home';
 import Layout from './Layout';

@@ -9,7 +9,7 @@ const Categories = ({ meal }) => {
     }
     // console.log(meal);
     return (
-        <div className='border-2 p-2 rounded'>
+        <div data-aos="zoom-in" className='border-2 p-2 rounded'>
             <img className='mx-auto' src={strCategoryThumb} alt="" />
             <h1 className='font-bold text-xl'>Recipie Name : {strCategory}</h1>
             <p className='text-left'>Description : {strCategoryDescription? strCategoryDescription.slice(0,200)+'...': strCategoryDescription}</p>

@@ -3,7 +3,7 @@ import React from 'react';
 const SearchedMeal = ({meal}) => {
     const {strMeal, strCategory, strArea, strMealThumb, strIngredient1, strInstructions} = meal;
     return (
-        <div className='border-2 p-2 rounded'>
+        <div data-aos="zoom-in" className='border-2 p-2 rounded'>
             <img className='mx-auto' src={strMealThumb} alt="" />
             <h1 className='font-bold text-xl'>Recipie Name : {strMeal}</h1>
             <div>
