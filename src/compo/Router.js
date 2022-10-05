@@ -22,7 +22,11 @@ const Router = () => {
                 return fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${params.foodcat}`)
             },
             element: <AllFoods></AllFoods> },
-            { path:'/home/:searchText', element: <SearchFood></SearchFood> },
+            { path:'/home/:searchText',
+            loader: async({params})=>{
+                return fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${params.searchText}`)
+            },
+            element: <SearchFood></SearchFood> },
             { path: '/blog' , element : <Blog></Blog> },
             { path: '/friends', element : <Friend></Friend> }
         ]},
